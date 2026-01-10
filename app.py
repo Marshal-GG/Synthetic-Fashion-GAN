@@ -36,9 +36,9 @@ try:
     # Load weights
     model.load_state_dict(torch.load("synthetic_generator.pth", map_location=device))
     model.eval()
-    print("✅ Model loaded successfully!")
+    print("Model loaded successfully!")
 except Exception as e:
-    print(f"⚠️ Error loading model: {e}")
+    print(f"Error loading model: {e}")
     print("Did you upload 'synthetic_generator.pth'?")
 
 # --- 3. GENERATION FUNCTION ---
